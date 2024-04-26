@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container1{
+display: flex;
+flex-wrap: nowrap;
+flex-basis: 100%;
+}
+
+.one{
+background-color: aqua;
+height: 100px;
+margin: 10px;
+flex-basis: 60%;
+}
+
+.five{
+background-color: gray;
+height: 100px;
+margin: 10px;
+flex-basis: 40%;
+}
+
+.two{
+background-color: gray;
+height: 40px;
+margin: 10px;
+flex-basis: 100%;
+}
+
+.three{
+background-color: gray;
+height: 150px;
+margin: 10px;
+flex-basis: 20%;
+}
+
+.four{
+background-color: gray;
+height: 200px;
+margin: 10px;
+flex-basis: 20%;
+}
+
+.container4 {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.container4 .four {
+flex-basis: calc(33.33% - 20px); 
+}
+
+@media screen and (max-width: 500px) {
+.container1 {
+ flex-wrap: wrap;
+}
+.one, .five {
+ flex-basis: 100%;
+ 
+}
+.container4 .four {
+ flex-basis: calc(50% - 20px); 
+}
+}
+
+@media screen and (min-width: 501px)  {
+.one {
+ flex-basis: 60%;
+}
+.five {
+ flex-basis: 40%;
+}
+}
+
