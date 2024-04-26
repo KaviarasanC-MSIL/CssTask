@@ -60,10 +60,6 @@ flex-basis: calc(33.33% - 20px);
 }
 
 @media screen and (max-width: 500px) {
-    body {
-        margin-left: 0;
-        margin-right: 0;
-    }
 .container1 {
  flex-wrap: wrap;
 }
@@ -86,3 +82,9 @@ flex-basis: calc(33.33% - 20px);
 }
 }
 
+@media screen and (max-width: 800px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
